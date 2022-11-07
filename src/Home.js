@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import {Outlet, useNavigate } from "react-router-dom";
 
+
 export default function Home() {
   document.title = "Sunday famous portfolio";
 
@@ -37,7 +38,7 @@ export default function Home() {
           <button
             className="home-btn"
             onClick={() => {
-              navigate("/repository");
+              navigate("/repos");
             }}
           >
             Repository
