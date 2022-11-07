@@ -130,7 +130,6 @@ html {
   width: 310px;
   height: 310px;
   background-color: rgb(156, 148, 148);
-  /* border-radius: 8px; */
   margin-top: 30px;
   border-radius: 50%;
   padding: 10px;
@@ -139,13 +138,13 @@ html {
 }
 .home-image-background {
   /* background-color: rgb(156, 148, 148); */
-  width: 40vw;
-  height: 70vh;
+  width: 30vw;
+  height: 80vh;
   margin: 10px auto;
-  /* background-image: url(./famous2.svg); */
+  background-image: url(./famous.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 540px 400px;
+  background-size: 440px 100px;
   
 }
 .home-right {
@@ -736,13 +735,13 @@ details {
     font-weight: 700;
   }
   .home-image-wrap {
-    width: 30px;
-    height: 30px;
+    width: 310px;
+    height: 310px;
     margin-bottom:200px;
   }
   .home-image-background {
-    height: 40vh;
-    width: 70vw;
+    height: 60vh;
+    width: 40vw;
     margin: 0px auto;
     background-size: 200px;
   
