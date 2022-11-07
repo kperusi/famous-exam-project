@@ -462,11 +462,11 @@ padding: 10px;
 
 .image {
   background-image: url(./github-logo.svg);
-  background-size: 150px;
+  background-size: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40vw;
-  height: 45vh;
+  width: 20vw;
+  height: 40vh;
 
   filter: brightness(1);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
