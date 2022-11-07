@@ -444,14 +444,22 @@ padding: 10px;
   flex-direction: column;
   height: 20vh;
   background-color: rgb(19, 35, 71);
-  /* padding: 20px; */
   border-radius: 8px;
   width: 70vw;
   margin: 20px auto;
 }
 .single-repo-owner h1 {
-  margin: 4px 30px;
+  margin: 4px auto;
 }
+
+.single-repo-owner h3 {
+  margin: 4px auto;
+ color: rgb(19, 35, 71) ;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  padding: 5px;
+}
+
 .image {
   /* background-image: url(./components/GitHub-Mark-32px.png); */
   background-size: 150px;
