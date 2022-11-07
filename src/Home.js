@@ -20,7 +20,7 @@ export default function Home() {
             <h1>Famous</h1>
             <h1>Sunday</h1>
           </div>
-          <h4> Github Portfolio</h4>
+          <h4 className="h4"> Github Portfolio</h4>
         </div>
 
         <h2> Hello,</h2>
