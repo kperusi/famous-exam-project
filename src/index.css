@@ -58,6 +58,22 @@ html {
   padding: 30px;
   align-self: flex-end;
 }
+.txt{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-end;
+  margin-right: 100px;
+  
+ 
+}
+.txt h2{
+  margin-top: -20px;
+  color:blueviolet;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgb(39, 38, 37);
+}
 .home-link,
 .repository-link,
 .error-link,
