@@ -461,14 +461,14 @@ padding: 10px;
 }
 
 .image {
-  /* background-image: url(./components/GitHub-Mark-32px.png); */
+  background-image: url(./github-logo.svg);
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 20vw;
-  height: 40vh;
+  width: 40vw;
+  height: 45vh;
 
-  filter: brightness(100);
+  filter: brightness(1);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
