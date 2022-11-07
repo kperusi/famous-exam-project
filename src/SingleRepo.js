@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import logo from './timer.svg'
+import logo2 from './link.svg'
 
 
 
@@ -64,13 +65,13 @@ export default function SingleRepo() {
                  <div className="para-wrap"><img src={logo} alt="time" className="time-icon"/>
                  <p> {each.updated_at}</p></div> 
                  {/* <h4>Repo Url</h4> */}
-                 <div className="para-wrap-deploy"><img src={logo} alt="time" className="time-icon"/>
+                 <div className="para-wrap-deploy"><img src={logo2} alt="time" className="time-icon"/>
                  <p style={{marginTop:'4px'}}> {each.url}</p></div>
                  {/* <h4>Created time</h4>  */}
                  <div className="para-wrap"><img src={logo} alt="time" className="time-icon"/>
                  <p> {each.created_at}</p></div> 
                  {/* <h4>Deployment Url</h4> */}
-                 <div className="para-wrap-deploy"><img src={logo} alt="time"    className="time-icon"/>
+                 <div className="para-wrap-deploy"><img src={logo2} alt="time"    className="time-icon"/>
                  <p style={{marginTop:'4px'}}>{each.deployments_url}</p></div> 
                   <p></p>
                 </div>
