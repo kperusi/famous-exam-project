@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './404.svg'
+import logo from './timer.svg'
 
 
 function ErrorPage() {
