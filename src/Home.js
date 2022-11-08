@@ -37,7 +37,7 @@ export default function Home() {
           <button
             className="home-btn"
             onClick={() => {
-              navigate("/repository");
+              navigate("/repos");
             }}
           >
             Repository
