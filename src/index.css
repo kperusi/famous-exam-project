@@ -146,7 +146,7 @@ html {
 .home-image-wrap {
   width: 310px;
   height: 310px;
-  background-color: rgb(156, 148, 148);
+  background-color: rgb(19, 16, 16);
   margin-top: 30px;
   border-radius: 50%;
   padding: 10px;
@@ -154,14 +154,13 @@ html {
   0 8px 10px -6px rgba(24, 18, 18, 0.461);
 }
 .home-image-background {
-  /* background-color: rgb(156, 148, 148); */
-  width: 50vw;
-  height: 70vh;
-  margin: 10px auto;
-  background-image: url(./famous.svg);
+  width: 30vw;
+  height: 60vh;
+  margin: 10px 0px;
+  background-image: url(./Famousno-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 440px 300px;
+  background-size: 240px 300px;
   
 }
 .home-right {
