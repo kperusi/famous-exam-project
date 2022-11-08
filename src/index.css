@@ -64,6 +64,8 @@ html {
   gap: 0;
   justify-content: flex-end;
   margin-right: 100px;
+  color:  rgb(233, 183, 133);
+  font-size: 1.3em;
   
  
 }
@@ -72,7 +74,7 @@ html {
   color:blueviolet;
   border-radius: 8px;
   padding: 5px;
-  background-color: rgb(39, 38, 37);
+  background-color: rgb(233, 183, 133);
 }
 .home-link,
 .repository-link,
@@ -128,8 +130,8 @@ html {
   width: 120px;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid green;
-  background-color: green;
+  border: 1px solid blueviolet;
+  background-color:blueviolet;
   font-weight: 700;
 }
 .home-btn-profile {
@@ -657,16 +659,18 @@ details {
     gap: 0px;
     width: 100%;
     justify-content: center;
+   
   }
   .nav-wrap {
     display:flex;
     flex-direction: column;
     width: 0%;
     position: absolute;
-    height: 200%;
+    height: 600%;
     top: 0px;
     right: 0px;
     z-index: 1;
+   
   }
 
   .nav-section {
@@ -677,10 +681,12 @@ details {
     margin-top: 0;
     top: 39.8vh;
     width: 240px;
-    height: 80%;
+    height: 100%;
     right: -100%;
     -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    
+  
   }
 
   .show {
@@ -693,6 +699,11 @@ details {
    
     width: 100%;
     background-color: rgba(128, 128, 128, 0.27);
+  }
+  .nav-links{
+ 
+    width: 100%;
+    text-align: left;
   }
 
 
@@ -717,6 +728,7 @@ details {
     width: 100vw;
     margin-bottom: 10px;
     margin: 0 auto;
+    
   }
   .home-btn-profile {
     width: 100vw;
