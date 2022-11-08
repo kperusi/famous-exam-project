@@ -52,7 +52,7 @@ const reducer = (state, action) => {
 
 export default function RepoList() {
   const navigate = useNavigate();
-
+const [disabled, setDisabled]=useState('')
   const [data, setData] = useState([]);
     const [states, dispatch] = useReducer(reducer, initial);
     const [currentPage, currentPageDispatch] = useReducer(pageReducer, userDetails
@@ -110,6 +110,8 @@ export default function RepoList() {
   
     let lastIndex = currentPage.currentPage * dataPerPage;
     let startIndex = lastIndex - dataPerPage;
+
+   
 
   console.log(data)
     let listName = states.data
@@ -171,7 +173,7 @@ export default function RepoList() {
         
         <div className="page-btns-container">
 
-        <button className="prev-btn"
+        <button className={`prev-btn ${currentPage.currentPage <= 1? 'disable':''}`}
             onClick={() => {
               currentPageDispatch({
                 type: "setCurrentPage",
@@ -180,8 +182,8 @@ export default function RepoList() {
                 
               });
             }}
-            // disabled={currentPage.currentPage <= 1}
-            disabled ='true'
+            disabled={currentPage.currentPage <= 1}
+            
           >
             
           </button>
@@ -213,7 +215,7 @@ export default function RepoList() {
             }
           )}
           <button
-            className="next-btn"
+            className={`next-btn ${currentPage.currentPage >= NumberOfPages?'disable':'' }`}
             onClick={() => {
               currentPageDispatch({
                 type: "setCurrentPage",
