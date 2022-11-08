@@ -6,6 +6,7 @@ import "./index.css";
 
 
 
+
 const initial = {
   data: [],
   loading: true,
@@ -13,24 +14,14 @@ const initial = {
 };
 const userDetails = {
   currentPage: 1,
-  imgUrl: "",
-  emailAddress: "",
-  name: "",
-  phone: "",
-  dob:'',
-  age:''
+
 };
 
 const pageReducer = (state, action) => {
   if (action.type === "setCurrentPage") {
     return {
       currentPage: action.payload,
-      imgUrl: action.payload2,
-      emailAddress: action.payload3,
-      name: action.name,
-      phone: action.phone,
-      dob:action.dob,
-      age:action.age
+      
     };
   }
   else
@@ -176,7 +167,25 @@ export default function RepoList() {
         </div>
       </div>
         <ul className="list-item-container">{listName}</ul>
+        
+        
         <div className="page-btns-container">
+
+        <button className="prev-btn"
+            onClick={() => {
+              currentPageDispatch({
+                type: "setCurrentPage",
+                payload: currentPage.currentPage - 1,
+                name:currentPage.name,
+                
+              });
+            }}
+            // disabled={currentPage.currentPage <= 1}
+            disabled ='true'
+          >
+            
+          </button>
+
           {Array.from({ length: NumberOfPages }, (_, index) => index + 1).map(
             (index) => {
               return (
@@ -192,9 +201,7 @@ export default function RepoList() {
                       name:currentPage.name,
                       payload2:currentPage.imgUrl,
                       payload3: currentPage.emailAddress,
-                      // phone: currentPage.phone,
-                      // dob:currentPage.dob,
-                      // age:currentPage.age
+                    
                     });
                   }}
                 >
@@ -205,6 +212,19 @@ export default function RepoList() {
               );
             }
           )}
+          <button
+            className="next-btn"
+            onClick={() => {
+              currentPageDispatch({
+                type: "setCurrentPage",
+                payload: currentPage.currentPage + 1,
+               
+              });
+            }}
+            disabled={currentPage.currentPage >= NumberOfPages}
+          >
+            
+          </button>
                
         </div>
         <p className="page-indicator">

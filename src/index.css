@@ -455,7 +455,7 @@ padding: 10px;
   margin: 0 auto;
   border-radius: 8px;
   display: flex;
-  height: 100vh;
+  height: 110vh;
   padding: 30px;
 }
 .single-repo-owner {
@@ -481,16 +481,16 @@ padding: 10px;
 }
 
 .image {
-  background-image: url(./github-logo.svg);
-  background-size: 150px;
+  background-image: url(./GitHub-Mark.png);
+  background-size: 120px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 20vw;
+  width: 15vw;
   height: 35vh;
-
-  filter: brightness(1);
+  filter: brightness(8);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border: 2px solid antiquewhite;
 }
 .single-details-wrap {
   padding: 40px;
@@ -515,11 +515,11 @@ padding: 10px;
   /* color: white; */
   margin-top: 50px;
   background-color: wheat;
-  padding: 40px 5px;
+  padding: 20px 5px;
   border-radius: 20px;
   height: 30vh;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .single-branch-wrap {
   display: flex;
@@ -586,18 +586,35 @@ padding: 10px;
   border-radius: 8px;
 }
 
-.page-btns{
-  width: 80px;
+
+.page-btns, .prev-btn, .next-btn{
+  width: 50px;
   margin-top: auto;
-  height: 80px;
+  height: 50px;
   background-color: aqua;
   outline: none;
   border-radius: 5px;
   font-size: 1.5em;
   font-weight: 700;
   border: 2px solid rgb(164, 163, 163);
+  border: 2px solid red;
  
 }
+.prev-btn, .next-btn{
+  font-size: 0.3em;
+  background-image: url(./arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  margin-top: 0;
+}
+.next-btn{
+  background-image: url(./arrow-right.svg)
+}
+.disable{
+  background-color: gray;
+}
+
 .page-indicator{
   color: aqua;
   margin: 0 auto;
