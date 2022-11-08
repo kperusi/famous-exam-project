@@ -57,7 +57,21 @@ export default function Home() {
         </div>
 
         <div className="home-icon-link">
-          
+          <div className="facebook-icon" onClick={()=>{
+           window.open('https://web.facebook.com/famous05')
+          }}> </div>
+          <div className="twitter-icon" onClick={()=>{
+            window.open("https://twitter.com/FamousSunday5")
+          }}>
+
+          </div>
+          <div className="linkedin-icon" onClick={()=>{
+            window.open('https://www.linkedin.com/in/sunday-famous25/')
+          }}></div>
+          <div className="github-icon" onClick={()=>{
+            window.open('https://github.com/kperusi')
+          }}></div>
+
         </div>
 
       </div>
