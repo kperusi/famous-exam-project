@@ -105,6 +105,9 @@ html {
 }
 .home-container {
   padding: 80px;
+
+  display: flex;
+  flex-direction: column;
 }
 .name-wrap {
   display: flex;
@@ -129,16 +132,17 @@ html {
   width: 120px;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid green;
-  background-color: green;
+  border: 1px solid blueviolet;
+  background-color: blueviolet;
   font-weight: 700;
+  color: aliceblue;
 }
 .home-btn-profile {
   width: 120px;
   height: 40px;
   border-radius: 8px;
   /* border: 1px solid; */
-  border: 1.5px solid green;
+  border: 1.5px solid blueviolet;
   background-color: antiquewhite;
   margin-left: 10px;
   font-weight: 700;
@@ -162,6 +166,17 @@ html {
   background-repeat: no-repeat;
   background-size: 240px 300px;
   
+  
+}
+.home-icon-link{
+
+  margin-top: 80px;
+  height: 20vh;
+  border-radius: 8px;
+  background-color: rgba(137, 43, 226, 0.481);
+  box-shadow: 0 2px 10px 0px rgba(8, 6, 6, 0.314),
+  0 8px 10px -6px rgba(24, 18, 18, 0.461);
+
 }
 .home-right {
   /* height: 100vh;
@@ -173,7 +188,7 @@ html {
 
 .home-box1 {
   height: 350px;
-  width: 60vh;
+  width: 55vh;
   border-radius: 8px;
   margin: 100px 50px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
@@ -198,8 +213,11 @@ html {
   font-size: 1.2em;
   text-align: center;
 }
+.home-box2 h1{
+  background-color: rgb(9, 82, 110);
+}
 .home-box3 h1 {
-  background-color: rgb(9, 82, 110);;
+  background-color: rgba(137, 43, 226, 0.575);
   border-radius: 5px;
   margin-top: 0px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
@@ -227,13 +245,13 @@ html {
   list-style: none;
 }
 .home-box2 div {
-  background-color: rgb(61, 61, 60);
+  background-color: rgb(9, 82, 110);
   border-radius: 5px;
   margin-top: 10px;
-  background-image: url(./Calculator.svg);
+  background-image: url(./Calculator.PNG);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px 300px;
+  background-size: 220px 250px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
     0 8px 10px -6px rgba(10, 8, 8, 0.385);
   box-shadow: 0 0px 25px 0px rgba(8, 6, 6, 0.314),
@@ -247,7 +265,7 @@ html {
 }
 .home-box2 {
   height: 350px;
-  width: 60vh;
+  width: 55vh;
   border-radius: 8px;
   margin-top: -120px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
@@ -260,7 +278,7 @@ html {
 }
 .home-box3 {
   height: 350px;
-  width: 60vh;
+  width: 55vh;
   border-radius: 8px;
   margin-top: -50px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
@@ -274,13 +292,14 @@ html {
 }
 
 .home-box3 div {
-  background-color: rgb(9, 82, 110);
+  
+  background-color: rgba(137, 43, 226, 0.575);
   border-radius: 5px;
   margin-top: 10px;
   background-image: url(./active-states.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px 300px;
+  background-size: 400px;
   -webkit-box-shadow: 0 0px 25px 25px rgba(13, 10, 10, 0.348),
     0 8px 10px -6px rgba(10, 8, 8, 0.385);
   box-shadow: 0 0px 25px 0px rgba(8, 6, 6, 0.314),
@@ -292,6 +311,7 @@ html {
   height: 55vh;
   list-style: none;
 }
+
 
 
 .list-item {

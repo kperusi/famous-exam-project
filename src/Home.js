@@ -55,6 +55,11 @@ export default function Home() {
         <div className="home-image-wrap">
           <div className="home-image-background"></div>
         </div>
+
+        <div className="home-icon-link">
+          
+        </div>
+
       </div>
 
       <div className="home-right">
