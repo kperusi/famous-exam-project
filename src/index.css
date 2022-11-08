@@ -143,24 +143,25 @@ html {
   font-weight: 700;
 }
 .home-image-wrap {
-  width: 310px;
-  height: 310px;
-  background-color: rgb(156, 148, 148);
+  width: 300px;
+  height: 300px;
+  background-color: rgb(5, 5, 5);
   margin-top: 30px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 25px;
   box-shadow: 0 0px 25px 0px rgba(8, 6, 6, 0.314),
   0 8px 10px -6px rgba(24, 18, 18, 0.461);
 }
 .home-image-background {
   /* background-color: rgb(156, 148, 148); */
   width: 50vw;
-  height: 70vh;
-  margin: 10px auto;
-  background-image: url(./famous.svg);
+  height: 60vh;
+  margin: 20px auto;
+  background-image: url(./Famousno-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 440px 300px;
+  border-radius: 10px;
   
 }
 .home-right {
