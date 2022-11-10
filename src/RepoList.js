@@ -191,7 +191,7 @@ const [disabled, setDisabled]=useState('')
           {Array.from({ length: NumberOfPages }, (_, index) => index + 1).map(
             (index) => {
               return (
-                <div className="page-btn-wrap">
+                <div className="page-btn-wrap" key={index}>
                    <button
                   className={`page-btns ${currentPage.currentPage === index? 'active-btns':null}`}
                   key={index}

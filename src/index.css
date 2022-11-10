@@ -6,7 +6,7 @@ body,
 html {
   padding: 0;
   margin: 0;
-  /* font-family: "Space_Grotesk"; */
+ 
 }
 .nav-logo-wrapper {
   display: flex;
@@ -51,7 +51,7 @@ html {
   transition: all 0.2s;
 }
 .nav {
-  /* border: 2px solid red; */
+
   display: flex;
   height: 20vh;
   width: 50vw;
@@ -75,7 +75,7 @@ html {
   background-color: rgb(231, 150, 70);
   
 }
-.home-link,
+ .home-link,
 .repository-link,
 .error-link,
 .portfolio-link {
@@ -141,7 +141,7 @@ html {
   width: 120px;
   height: 40px;
   border-radius: 8px;
-  /* border: 1px solid; */
+
   border: 1.5px solid blueviolet;
   background-color: antiquewhite;
   margin-left: 10px;
@@ -223,11 +223,11 @@ display: flex;
 
 }
 .home-right {
-  /* height: 100vh;
-  width: 50px; */
+ 
   display: flex;
   flex-direction: column;
   padding: 20px;
+
 }
 
 .home-box1 {
@@ -243,6 +243,7 @@ display: flex;
   background-color: white;
   padding: 3px 5px;
 }
+
 .home-box1 h1,
 .home-box2 h1, .home-box3 h1 {
   background-color: rgb(61, 61, 60);
@@ -400,12 +401,12 @@ padding: 10px;
   border-radius: 50%;
   color: wheat;
   align-self: flex-end;
-  /* padding: 5px; */
+
 }
 .owner-info-wrap{
   display: flex;
   flex-direction: column;
-  /* border: 2px solid cyan; */
+ 
   margin-left: 200px;
   justify-content: center;
   margin-top: 70px;
@@ -452,7 +453,7 @@ padding: 10px;
   border-radius: 8px;
   padding-top: 35px;
   background-color: rgb(61, 60, 60);
-  /* -moz-box-shadow: 0 4px 6px rgba(116, 182, 200, 0.381); */
+ 
   -webkit-box-shadow: 0 0px 25px 25px rgba(244, 240, 240, 0.348),
     0 8px 10px -6px rgba(251, 249, 249, 0.385);
   box-shadow: 0 0px 25px 0px rgba(247, 245, 245, 0.314),
@@ -495,7 +496,6 @@ padding: 10px;
 .single-repo-wrap {
   background-color: rgb(19, 35, 71);
   width: 70vw;
-  /* color: white; */
   margin: 0 auto;
   border-radius: 8px;
   display: flex;
@@ -544,7 +544,6 @@ padding: 10px;
   color: white;
   display: flex;
   flex-direction: column;
-  /* margin-left: 20px; */
   height: 20vh;
   background-color: rgb(11, 20, 42);
   font-size: 1.8em;
@@ -556,7 +555,7 @@ padding: 10px;
   width: 40vw;
 }
 .single-repo-desc {
-  /* color: white; */
+ 
   margin-top: 50px;
   background-color: wheat;
   padding: 20px 5px;
@@ -661,7 +660,7 @@ height: 55px;
   background-image: url(./arrow-right.svg)
 }
 .active-btns{
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.555);
 }
 .disable{
   background-color: gray;
@@ -698,8 +697,8 @@ details {
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db; 
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -719,10 +718,23 @@ details {
 
 .hambuger {
   display: none;
+} 
+.single-repo-btns-wrap{
+  display: flex;
+ gap: 20px;
+  justify-content: center;
+  margin: 30px auto;
+}
+.single-repo-btns-wrap button{
+  height: 10vh;
+  width: 20vw;
+  font-weight: 600;
+  background-color: antiquewhite;
+  border: 1px solid;
 }
 
 @media (min-width: 180px) and (max-width: 780px) {
-  /* .nav{display: none;} */
+ 
 
   .hambuger {
     display: block;
@@ -751,7 +763,7 @@ details {
     flex-direction: column;
     width: 0%;
     position: absolute;
-    height: 200%;
+    height: 500%;
     top: 0px;
     right: 0px;
     z-index: 1;
@@ -765,7 +777,7 @@ details {
     margin-top: 0;
     top: 39.8vh;
     width: 240px;
-    height: 80%;
+    height: 100%;
     right: -100%;
     -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
@@ -783,6 +795,11 @@ details {
     background-color: rgba(128, 128, 128, 0.27);
   }
 
+  .nav-links{
+    width: 100%;
+    text-align: left;
+  }
+
 
   
   .home-top-container {
@@ -790,7 +807,7 @@ details {
     flex-direction: column;
     height: 300vh;
     width: 100%;
-    
+   
     
   }
 
@@ -800,11 +817,14 @@ details {
     padding: 0px;
     width:100%;
     margin: 0 auto;
+    
+    
   }
   .home-btn{
     width: 100vw;
     margin-bottom: 10px;
     margin: 0 auto;
+   
   }
   .home-btn-profile {
     width: 100vw;
@@ -834,8 +854,8 @@ details {
     width: 120px;
     height: 40px;
     border-radius: 8px;
-    border: 1px solid green;
-    background-color: green;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
     font-weight: 700;
   }
   .name-wrap {
@@ -845,8 +865,8 @@ details {
     width: 120px;
     height: 40px;
     border-radius: 8px;
-    /* border: 1px solid; */
-    border: 1.5px solid green;
+    border: 1px solid; 
+    border: 1.5px solid blueviolet;
     background-color: antiquewhite;
     margin-left: 0px;
     font-weight: 700;
@@ -864,32 +884,37 @@ details {
   
   }
   .home-right {
-    /* height: 50px; */
     width: 100%;
-    height: 100vh;
-    margin-top: 20px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 0;
+   
+  
+   
     
   }
 
   .home-box1{
     transform: rotate(0deg);
     width: 80%;
-    height: 66vh;
-    margin: 10px auto;
+    height: 60vh;
+    margin: 0 auto;
+   
   
   }
+
 
 .home-box2{
     transform: rotate(0deg);
     width: 80%;
-    height: 70vh;
-    margin: -10px auto;
+    height: 60vh;
+    margin: 0px auto;
   }
   .home-box3{
     transform: rotate(0deg);
     width: 80%;
-    height: 70vh;
-    margin: 90px auto;
+    height: 60vh;
+    margin: 60px auto;
     
   }
   .home-box1 ul,
@@ -899,9 +924,6 @@ details {
  
 }
 
-  .home-box1{
-    margin: 0;
-  }
 
   .home-box2{
     margin-top:100px;
@@ -949,6 +971,32 @@ details {
   
   
   }
+  .single-details-wrap, .single-repo-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+  }
+  .single-repo-wrap{
+    padding: 0 5px;
+    height: 150%;
+  }
+  
+  .image-wrap, .single-repo-name{
+    width: 100%;
+    
+  }
+  .image, .single-repo-desc{
+    width: 100%;
+  }
+ 
+
 
 
 }
+ 
+
+
+

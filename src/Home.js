@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState } from "react";
 import {Outlet, useNavigate } from "react-router-dom";
-
+import './index.css'
 export default function Home() {
   document.title = "Sunday famous portfolio";
 

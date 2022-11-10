@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import logo from './timer.svg'
 import logo2 from './link.svg'
@@ -9,6 +9,7 @@ import logo2 from './link.svg'
 
 export default function SingleRepo() {
   const params = useParams();
+  const navigate = useNavigate()
 
   const [data, setData] = useState([]);
   const [loading, SetLoading] = useState(true);
@@ -49,7 +50,8 @@ export default function SingleRepo() {
           <div className="single-repo-wrap">
             <div className="image-wrap">
               <div className="image"></div>
-              <p className="single-repo-desc">{each.description}</p>
+              {each.description && <p className="single-repo-desc">{each.description}</p>}
+              
             </div>
             <div className="single-details-wrap">
               <div className="single-repo-name">{each.name}</div>
@@ -75,11 +77,19 @@ export default function SingleRepo() {
                  <div className="para-wrap-deploy"><img src={logo2} alt="time"    className="time-icon"/>
                  <p style={{marginTop:'4px'}}>{each.deployments_url}</p></div> 
                   <p></p>
+                  
                 </div>
               </div>
+              
+              
+              
 
             </div>
           </div>
+          <div className="single-repo-btns-wrap">
+              <button className="single-repo-btn-repo" onClick={()=>{navigate('/repos')}}>Repository</button>
+              <button onClick={()=>{navigate('/')}}>Home</button>
+              </div>
         </div>
       );
     }
