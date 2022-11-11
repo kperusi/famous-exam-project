@@ -40,7 +40,7 @@ const reducer = (state, action) => {
       return {
         data: [],
         loading: false,
-        error: "something went wrong",
+        error: "something went wrong! Pls Check your connection",
       };
     default:
       return state;
@@ -51,6 +51,7 @@ const reducer = (state, action) => {
 
 
 export default function RepoList() {
+  document.title = "Sunday famous github repositories";
   const navigate = useNavigate();
 const [disabled, setDisabled]=useState('')
   const [data, setData] = useState([]);
@@ -97,19 +98,15 @@ const [disabled, setDisabled]=useState('')
         type: "setCurrentPage",
         payload2: eachPerson.picture.large,
         payload: currentPage.currentPage,
-        payload3: eachPerson.email,
-        name: eachPerson.name.first + " " + " " + eachPerson.name.last,
-        phone: eachPerson.cell,
-        dob:eachPerson.dob.date,
-        age:eachPerson.dob.age
+     
       });
     };
     
     let dataPerPage = 5;
     let NumberOfPages = Math.ceil(states.data.length / dataPerPage);
-  
     let lastIndex = currentPage.currentPage * dataPerPage;
     let startIndex = lastIndex - dataPerPage;
+
 
    
 
@@ -117,7 +114,8 @@ const [disabled, setDisabled]=useState('')
     let listName = states.data
       .slice(startIndex, lastIndex)
       .map((eachRepo, i) => (
-        <div
+        
+        <div 
         key={i}
         className="list-item"
         onClick={() => {
@@ -125,13 +123,13 @@ const [disabled, setDisabled]=useState('')
          
         }}
       >
+
         <div className="branch-container">
         <h5 className="repo-visible">{eachRepo.visibility}</h5>
         <h5 className="repo-branch">{eachRepo.default_branch}</h5>
         </div>
-       
-        <h2 className="repo-name"> {eachRepo.name} </h2>
-        <p className="para">last Update:{eachRepo.updated_at}</p>
+        <h2 className="repo-name" > {eachRepo.name} </h2>
+        <p className="para">Last Update: {eachRepo.updated_at}</p>
        
       </div>
       ));
@@ -148,8 +146,9 @@ const [disabled, setDisabled]=useState('')
   }
   if (states.error) {
     return (
-      <div>
+      <div className="repolist-error">
         <h1>{states.error}</h1>
+        <button onClick={()=>{window.location.reload()}}>Reload</button>
       </div>
     );
   }
@@ -164,10 +163,15 @@ const [disabled, setDisabled]=useState('')
           <h3>{data.public_repos} public repository</h3>
           <p>Click to get details</p>
         </div>
+        <div className="circle-wrap">
         <div className="circle">
-           <img src={data.avatar_url} alt="owner avatar" className="avatar" />    
+           <img src={data.avatar_url} alt="owner avatar" className="avatar" />  
         </div>
+        <h2 className="repolist-owner-login">{data.login}</h2>
+        </div>
+       
       </div>
+     
         <ul className="list-item-container">{listName}</ul>
         
         
@@ -200,9 +204,7 @@ const [disabled, setDisabled]=useState('')
                 
                       type: "setCurrentPage",
                       payload: index,
-                      name:currentPage.name,
-                      payload2:currentPage.imgUrl,
-                      payload3: currentPage.emailAddress,
+                      
                     
                     });
                   }}

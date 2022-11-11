@@ -373,7 +373,7 @@ display: flex;
   width: 50vw;
   height: 30vh;
   border-radius: 8px;
-  background-color: rgb(90, 88, 88);
+  background-color: #220028;
   color: whitesmoke;
   text-align: center;
   cursor: pointer;
@@ -384,14 +384,27 @@ display: flex;
 .repolist-container-bottom{
   display: flex;
   color: white;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   width: 100%;
 padding: 10px;
   justify-content: flex-end;
  margin-bottom: 20px;
  gap: 20px;
-  
+ 
+  padding-right: 100px;
+}
+.circle-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle-wrap h2{
+border-width: 0 1.5px 1.5px 1.5px;
+border-style: solid;
+border-color: antiquewhite;
+  width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  padding :5px;
 }
 .circle{
   display: flex;
@@ -406,7 +419,6 @@ padding: 10px;
 .owner-info-wrap{
   display: flex;
   flex-direction: column;
- 
   margin-left: 200px;
   justify-content: center;
   margin-top: 70px;
@@ -488,10 +500,36 @@ padding: 10px;
   color: yellowgreen;
   margin-top: -3pxpx;
 }
+.repolist-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.repolist-error button{
+  width: 180px;
+  height: 50px;
+  border-width: 0px;
+  border-color: blueviolet;
+  background-color: blueviolet;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+  font-size: 1.4em;
+
+}
+.repolist-error button:hover{
+
+background-color: rgb(189, 138, 237);
+cursor: pointer;
+}
+
 .single-repo-container {
   background-color: rgb(7, 16, 37);
   padding-bottom: 40px;
   padding-top: 40px;
+  
+
 }
 .single-repo-wrap {
   background-color: rgb(19, 35, 71);
@@ -501,6 +539,8 @@ padding: 10px;
   display: flex;
   height: 110vh;
   padding: 30px;
+  
+  
 }
 .single-repo-owner {
   color: white;
@@ -934,9 +974,24 @@ details {
 .repolist-container-bottom{
   display: flex;
   flex-direction: column;
-  margin-left: 0;
+ 
+  width: 100%;
+  justify-content: center;
+  padding: 0;
  
 }
+.circle-wrap{
+
+  width: 100%;
+  
+}
+.circle{
+  align-self: center;
+}
+.circle-wrap h2{
+  width: 80%;
+}
+
 .owner-info-wrap{
   margin-left: 0;
 }
@@ -992,6 +1047,21 @@ details {
     width: 100%;
   }
  
+.single-repo-container{
+  padding-bottom: 100%;
+}
+.single-repo-btns-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.single-repo-btns-wrap button{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
 
 
 

@@ -104,9 +104,10 @@ export default function SingleRepo() {
   }
   if (error) {
     return (
-      <div>
-        <h1>{error}</h1>
-      </div>
+      <div className="repolist-error">
+      <h1>{error}</h1>
+      <button onClick={()=>{window.location.reload()}}>Reload</button>
+    </div>
     );
   }
 
