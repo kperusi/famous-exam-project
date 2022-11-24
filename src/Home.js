@@ -23,10 +23,10 @@ export default function Home() {
           <h4 className="h4"> Github Portfolio</h4>
         </div>
 
-        <h2> Hello,</h2>
+        <h2 className="home-hello"> Hello,</h2>
         <p className="home-tex">
           I'm a Software Engineer, Content Creator, and a Science
-          tutor(Mathematics Physics and Chemistry). I am currently a Mathematics
+          tutor (Mathematics Physics and Chemistry). I am currently a Mathematics
           teacher at Sedco Secondary School Enerhen, Warri. I'm passionate about
           any thing I do. I have build some useful web Applications and
           Contributed to open source some of my web projects can be found and
@@ -53,7 +53,10 @@ export default function Home() {
         </div>
 
         <div className="home-image-wrap">
-          <div className="home-image-background"></div>
+          <div className="home-image-circle-one"></div>
+          <div className="home-image"></div>
+          <div className="home-image-circle-two"></div>
+          {/* <div className="home-image-details"> name kperusi</div> */}
         </div>
 
         <div className="home-icon-link">
