@@ -809,13 +809,11 @@ details {
     flex-direction: column;
     width: 0%;
     position: absolute;
-    height: 333%;
+    height: 268%;
     top: 0px;
     right: 0px;
     z-index: 1;
-  
-    
-    
+   
   }
 
   .nav-section {
@@ -826,7 +824,7 @@ details {
     margin-top: 0;
     top: 200px;
     width: 240px;
-    height: 108%;
+    height: 88%;
     right: -100%;
     -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
@@ -849,8 +847,11 @@ details {
   .home-top-container {
     display: flex;
     flex-direction: column;
-    height: 300vh;
+    /* height: 150vh;
+     */
+     height: fit-content;
     width: 100%;
+   
   }
 
   .home-container {
@@ -859,6 +860,8 @@ details {
     padding: 0px;
     width: 100%;
     margin: 0 auto;
+  
+    
   }
   .home-btn {
     width: 100vw;
@@ -969,41 +972,77 @@ details {
   top: -130px;
 }
   .home-right {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 20px auto;
     padding: 0;
+   
+    
     
   }
-
   .home-box1 {
     transform: rotate(0deg);
-    width: 80%;
-    height: 60vh;
+    width: 90%;
+    height: 300px;
     margin: 0 auto;
   }
-
-  .home-box2 {
+  .home-box2,.home-box3 {
     transform: rotate(0deg);
-    width: 80%;
-    height: 60vh;
+    width: 40vw;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  /* .home-box2 {
+    transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
     margin: 0px auto;
   }
   .home-box3 {
     transform: rotate(0deg);
+    width: 20px;
+    height: 20px;
+    margin: 0px auto;
+  } */
+  /* .home-box3 {
+    transform: rotate(0deg);
     width: 80%;
     height: 60vh;
     margin: 60px auto;
-  }
+  } */
   .home-box1 ul,
   .home-box2 div,
   .home-box3 div {
-    height: 50vh;
+    height: 250px;
+    width: 100%;
+    font-size: 0.8em;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    
   }
+  .home-box1 ul li{
+    border: 2px solid;
+    padding: 2px;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    /* margin-top: -20px; */
+    margin-bottom: 0;
+  }
+  .home-box1 h1,
+.home-box2 h1,
+.home-box3 h1 {
+  font-size: 0.8em;
+  height: 30px;
+}
 
-  .home-box2 {
-    margin-top: 100px;
-  }
+
   .para {
     margin-left: 0;
   }
