@@ -1,0 +1,179 @@
+.main{
+    display: flex;
+    flex-direction:row;
+    /* height: 200px; */
+    gap: 60px;
+ 
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.input{
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid #1d3535 ;
+    background-color: #476161;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+.textarea{
+    border-radius: 5px;
+    outline: none;
+    border: 1.5px solid #1d3535 ;
+    background-color: #476161;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+.btn{
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #1d3535 ;
+  background-color: #476161;
+  color: gray;
+  font-size: 1.2em;
+  padding: 20px;
+}
+.others{
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+    margin-top: 70px;
+    
+}
+.iconwrap{
+  display: flex;
+}
+.facebookicon {
+    width: 5vw;
+    height: 40px;
+    background-image: url(./facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    margin: auto 0;
+    
+  }
+  
+  .twittericon {
+    width: 5vw;
+    height: 40px;
+    background-image: url(./twittericon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    margin: auto 0;
+  }
+  .linkedinicon {
+    width: 5vw;
+    height: 40px;
+    background-image: url(./linkedin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    margin: auto 0;
+  }
+  .githubicon {
+    width: 5vw;
+    height: 40px;
+    background-image: url(./github.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    margin: auto 0;
+  }
+
+  @media (min-width: 180px) and (max-width: 780px){
+.main{
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width:100%;
+
+}
+.input{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #1d3535 ;
+  background-color: #476161;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 0px;
+}
+.textarea{
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #1d3535 ;
+  background-color: #476161;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 0px;
+}
+.others{
+  display: flex;
+  flex-direction:column;
+  /* height: 80px; */
+  margin-top: -30px;
+  gap: 30px;
+  
+
+}
+
+.facebookicon {
+  width: 60px;
+  height: 60px;
+  background-image: url(./facebookicon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  margin: auto 0;
+  border-radius: 50%;
+ 
+}
+.twittericon {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+.linkedinicon {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+.githubicon {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+  }

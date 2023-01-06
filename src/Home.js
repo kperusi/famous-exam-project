@@ -1,113 +1,126 @@
 import React from "react";
+import './home.css'
 
-import { useState } from "react";
-import {Outlet, useNavigate } from "react-router-dom";
-import './index.css'
+import { Outlet, useNavigate } from "react-router-dom";
+import "./index.css";
+import Skills from "./skills/Skills";
+import vue from "./skills/vue-dot-js.svg";
+import reacticon from "./icons8-react.png";
+import adbicon from "./adobe-after-effects.svg";
+import sassicon from "./sass.svg";
+import githubicon from './skills/github.svg'
+import Projects from "./projects/Projects";
+import Title from "./titles/Title";
+import ContactForm from "./contact/ContactForm";
+import Seo from "./Seo";
 export default function Home() {
-  document.title = "Sunday famous portfolio";
 
-  const [data, setData] = useState([]);
-  const [page, setPage] = useState(1);
-  const [loading, SetLoading] = useState(true);
-  const [imgUrl, setImgUrl] = useState("");
+
 
   const navigate = useNavigate();
   return (
     <main className="home-top-container">
-      <div className="home-container">
-        <div className="name-wrap">
-          <div className="name">
-            <h1>Famous</h1>
-            <h1>Sunday</h1>
+    
+      <Seo
+      title ='sunday famous portfolio-Home page'
+      description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
+       type= 'website'
+       name='Sunday Famous'/>
+
+      <section className="section-one">
+        <header className="home-bio-container">
+          <h2 className="home-title"> Web Developer</h2>
+          <p className="home-tex">
+            I'm a Software Engineer, I'm
+            passionate about any thing I do. I have build some useful web
+            Applications and Contributed to open source. some of my web projects
+            can be found and access through my repository page. you can also
+            check out my profile on github.
+          </p>
+          <div className="home-btn-wrap">
+            <button
+              className="home-btn"
+              onClick={() => {
+                navigate("/repos");
+              }}
+            >
+              Repository
+            </button>
+            <button
+              className="home-btn-profile"
+              onClick={() => {
+                window.open("https://github.com/kperusi");
+              }}
+            >
+              Github Portfolio
+            </button>
           </div>
-          <h4 className="h4"> Github Portfolio</h4>
-        </div>
-
-        <h2 className="home-hello"> Hello,</h2>
-        <p className="home-tex">
-          I'm a Software Engineer, Content Creator, and a Science
-          tutor (Mathematics Physics and Chemistry). I am currently a Mathematics
-          teacher at Sedco Secondary School Enerhen, Warri. I'm passionate about
-          any thing I do. I have build some useful web Applications and
-          Contributed to open source some of my web projects can be found and
-          access through my repository page and also check out my profile on
-          github.
-        </p>
-        <div className="home-btn-wrap">
-          <button
-            className="home-btn"
-            onClick={() => {
-              navigate("/repos");
-            }}
-          >
-            Repository
-          </button>
-          <button
-            className="home-btn-profile"
-            onClick={() => {
-              window.open("https://github.com/kperusi");
-            }}
-          >
-            Portfolio
-          </button>
-        </div>
-
-        <div className="home-image-wrap">
-          <div className="home-image-circle-one"></div>
-          <div className="home-image"></div>
-          <div className="home-image-circle-two"></div>
-          {/* <div className="home-image-details"> name kperusi</div> */}
-        </div>
-
-        <div className="home-icon-link">
-          <div className="facebook-icon" onClick={()=>{
-           window.open('https://web.facebook.com/famous05')
-          }}> </div>
-          <div className="twitter-icon" onClick={()=>{
-            window.open("https://twitter.com/FamousSunday5")
-          }}>
-
+        </header>
+        <header className="home-avatar">
+          <div className="home-avatar-background"></div>
+          <div className="home-image-wrap">
+            {/* <div className="home-image-circle-one"></div> */}
+            <div className="home-image"></div>
+            <div className="home-image-circle-two"></div>
           </div>
-          <div className="linkedin-icon" onClick={()=>{
-            window.open('https://www.linkedin.com/in/sunday-famous25/')
-          }}></div>
-          <div className="github-icon" onClick={()=>{
-            window.open('https://github.com/kperusi')
-          }}></div>
+        </header>
+      </section>
 
-        </div>
 
-      </div>
+      <section className="section-two">
+       
+        <Title name="Skills" alias="My can do" paddingLeft=''/>
+        <Skills
+          name="React Js"
+          imgscr={reacticon}
+          imgName="vue"
+          description="A Javascript Library for building Components"
+        />
 
-      <div className="home-right">
-        <div className="home-box1">
-          <h1>Technologies</h1>
-          <ul>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Java</li>
-            <li>Android</li>
-            <li>Vercel Hosting</li>
-            <li>Netlify Hosting</li>
-            <li>React</li>
-            <li>Git and Github</li>
-          </ul>
-        </div>
+        <Skills
+          name="Vue Js"
+          imgscr={vue}
+          imgName="vue"
+          description="A Javascript Library for building Components"
+        />
+        <Skills
+          name="SASS"
+          imgscr={sassicon}
+          imgName="vue"
+          description="A Javascript Library for building Components"
+        />
 
-        <div className="home-box2">
-          <h1>Calculator App</h1>
-          <div className="home-box2-image"></div>
-        </div>
+        <Skills
+          name="Adobe After Effect"
+          imgscr={adbicon}
+          imgName="vue"
+          description="A Video Editing Tool"
+        />
+         <Skills
+          name="Git and Github"
+          imgscr={githubicon}
+          imgName="git"
+          description="A Version Control Tool"
+        />
+      </section>
 
-        <div className="home-box3">
-          <h1>Ip Locator App</h1>
-          <div>
-            
-          </div>
-        </div>
+      <section className="section-three">
+        <Title
+         name="Projects"
+         alias="My Web Creations" 
+        headerColor='#3498db14' 
+        paddingLeft='40px'
+        subHeaderColor='#3498ee44' 
+        />
+        <Projects/>
+     
+      </section>
 
-      </div>
+      <section className="section-four">
+
+        <Title name="Contact" alias="Contact me or catch-up with me" right='right' textColor='white'/>
+      <ContactForm/>
+      </section>
 
       <Outlet />
     </main>

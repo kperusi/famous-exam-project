@@ -1,0 +1,28 @@
+
+.main{
+    display:flex;
+    border: 1.5px solid rgb(180, 176, 176);
+    border-radius: 5px;
+    width: 440px;
+    height: 80px;
+    padding-left: 10px;
+    gap: 10px;
+    background-color: white;
+}
+.img{
+   
+    margin: auto 0;
+
+}
+.headerwrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+   font-size:0.9em;
+   margin-left: 10px;
+   /* border: 2px solid; */
+}
+.header{
+margin-top: 14px;
+
+}

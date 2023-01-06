@@ -8,6 +8,7 @@ export default function ErrorBoundaryPage(props) {
 
     <>
     <h1>{props.message.toUpperCase()}</h1>
+    
     </>
    
     

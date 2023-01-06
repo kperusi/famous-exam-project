@@ -4,11 +4,11 @@ import { useState } from "react";
 export default function Hambuger(props) {
   const style = {
     display: "block",
-    width: " 70px",
-    height: " 8px",
+    width: " 40px",
+    height: " 4px",
     margin: "8px",
     transition: " all 0.3s ease-in-out",
-    backgroundColor: "white",
+    backgroundColor: "grey",
   };
   const [classname, setClassname] = useState("");
 

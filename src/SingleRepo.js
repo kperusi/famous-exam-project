@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import logo from './timer.svg'
 import logo2 from './link.svg'
+import './singleRepoStyle.css'
 
 
 

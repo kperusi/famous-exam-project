@@ -1,0 +1,188 @@
+
+.single-repo-container {
+    background-color: rgb(7, 16, 37);
+    padding-bottom: 40px;
+    padding-top: 40px;
+   
+   
+  }
+  .single-repo-wrap {
+    background-color: rgb(19, 35, 71);
+    width: 70vw;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    height: 110vh;
+    padding: 30px;
+  }
+  .single-repo-owner {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    background-color: rgb(19, 35, 71);
+    border-radius: 8px;
+    width: 70vw;
+    margin: 60px auto;
+    
+  }
+  .single-repo-owner h1 {
+    margin: 4px auto;
+  }
+  
+  .single-repo-owner h3 {
+    margin: 4px auto;
+    color: rgb(19, 35, 71);
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  
+  .image {
+    background-image: url(./GitHub-Mark.png);
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15vw;
+    height: 35vh;
+    filter: brightness(8);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border: 2px solid antiquewhite;
+  }
+  .single-details-wrap {
+    padding: 40px;
+  }
+  
+  .single-repo-name {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    background-color: rgb(11, 20, 42);
+    font-size: 1.8em;
+    padding: 20px;
+  
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 40vw;
+  }
+  .single-repo-desc {
+    margin-top: 50px;
+    background-color: wheat;
+    padding: 20px 5px;
+    border-radius: 20px;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .single-branch-wrap {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .single-repo-branch {
+    color: wheat;
+    border-radius: 8px;
+    border: 1.5px solid wheat;
+    padding: 5px;
+  }
+  .single-repo-visibility {
+    color: wheat;
+    border-radius: 8px;
+    border: 1.5px solid wheat;
+    padding: 5px;
+  }
+  .single-repo-id {
+    color: wheat;
+    border-radius: 8px;
+    border: 1.5px solid wheat;
+    padding: 5px;
+  }
+  
+  .single-other-details {
+    margin-top: 50px;
+    color: wheat;
+  }
+  .time-icon {
+    width: 30px;
+    color: white;
+    margin-right: 10px;
+  }
+  .para-wrap {
+    display: flex;
+    margin-top: 4px;
+  }
+  .para-wrap-deploy {
+    display: flex;
+    height: 40px;
+    margin-top: 4px;
+  }
+  
+  .single-date-update h4 {
+    text-align: center;
+    margin-bottom: 4px;
+    border: 1px solid;
+    width: 20vw;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  
+.single-repo-btns-wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  .single-repo-btns-wrap button {
+    height: 10vh;
+    width: 20vw;
+    font-weight: 600;
+    background-color: antiquewhite;
+    border: 1px solid;
+  }
+
+
+  @media (min-width: 180px) and (max-width: 780px) {
+    .single-details-wrap,
+    .single-repo-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+     
+    }
+    .single-repo-wrap {
+      padding: 0 5px;
+      height: 150%;
+      
+    }
+  
+    .image-wrap,
+    .single-repo-name {
+      width: 100%;
+    }
+    .image,
+    .single-repo-desc {
+      width: 100%;
+    }
+  
+    .single-repo-container {
+      /* padding-bottom: 100%; */
+     
+     
+    }
+    .single-repo-btns-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .single-repo-btns-wrap button {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.4em;
+    }
+  }

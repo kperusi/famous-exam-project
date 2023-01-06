@@ -2,7 +2,8 @@ import React from "react";
 import { useState ,useReducer} from "react";
 import { Outlet, useNavigate} from "react-router-dom";
 import { useEffect } from "react";
-import "./index.css";
+import "./repolistStyle.css";
+import Seo from "./Seo";
 
 
 
@@ -110,7 +111,7 @@ const [disabled, setDisabled]=useState('')
 
    
 
-  console.log(data)
+  console.log( typeof data.avatar_url )
     let listName = states.data
       .slice(startIndex, lastIndex)
       .map((eachRepo, i) => (
@@ -147,6 +148,14 @@ const [disabled, setDisabled]=useState('')
   if (states.error) {
     return (
       <div className="repolist-error">
+
+
+<Seo
+      title ='sunday famous github repository list'
+      description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
+       type= 'website'
+       name='Sunday Famous'/>
+
         <h1>{states.error}</h1>
         <button onClick={()=>{window.location.reload()}}>Reload</button>
       </div>

@@ -1,0 +1,265 @@
+
+.list-item {
+    border-top-width: 20px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-left-color: gray;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    border-top-color: aqua;
+    margin: 0 auto;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 8px;
+    background-color: #220028;
+    color: whitesmoke;
+    text-align: center;
+    cursor: pointer;
+ 
+    box-shadow: 0 0px 25px 0px rgba(22, 188, 234, 0.314),
+      0 8px 10px -6px rgba(15, 133, 183, 0.461);
+  }
+  .repolist-container-bottom {
+    display: flex;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    gap: 20px;
+  
+    padding-right: 100px;
+  }
+  .circle-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .circle-wrap h2 {
+    border-width: 0 1.5px 1.5px 1.5px;
+    border-style: solid;
+    border-color: antiquewhite;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  .circle {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    color: wheat;
+    align-self: flex-end;
+    margin-top: 80px;
+  }
+  .owner-info-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: center;
+    margin-top: 70px;
+    justify-items: center;
+  }
+  .owner-info-wrap h3 {
+    text-align: center;
+    margin-top: 0;
+    background-color: blueviolet;
+    border-radius: 8px;
+    height: 10vh;
+    padding: 10px;
+    width: 20vw;
+  }
+  .owner-info-wrap p {
+    text-align: center;
+    width: 20vw;
+    margin-top: 0;
+    font-weight: 700;
+  }
+  .avatar {
+    height: 230px;
+    color: white;
+    border-radius: 50%;
+    margin: 8px auto;
+  }
+  .list-item-wrap {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: black;
+   
+  }
+  .list-item-container {
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    margin: 0 auto;
+    width: 70vw;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+    border-radius: 8px;
+    padding-top: 35px;
+    background-color: rgb(61, 60, 60);
+  
+    -webkit-box-shadow: 0 0px 25px 25px rgba(244, 240, 240, 0.348),
+      0 8px 10px -6px rgba(251, 249, 249, 0.385);
+    box-shadow: 0 0px 25px 0px rgba(247, 245, 245, 0.314),
+      0 8px 10px -6px rgba(237, 236, 236, 0.461);
+  }
+  .repo-visible {
+    border: 1.5px solid;
+    width: 8vw;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: blueviolet;
+  }
+  .repo-branch {
+    border: 1.5px solid;
+    width: 8vw;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .repo-name {
+    margin-top: -5px;
+  }
+  
+  .branch-container {
+    display: flex;
+    margin-top: -2px;
+  }
+  .para {
+    margin-left: 300px;
+  
+    color: yellowgreen;
+    margin-top: -3pxpx;
+  }
+  .repolist-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .repolist-error button {
+    width: 180px;
+    height: 50px;
+    border-width: 0px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: 1.4em;
+  }
+  .repolist-error button:hover {
+    background-color: rgb(189, 138, 237);
+    cursor: pointer;
+  }
+
+  .page-btns-container {
+    display: flex;
+    height: 100px;
+    width: 60vw;
+    border: 2px solid grey;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(61, 60, 60);
+    padding: 8px;
+    margin: 30px auto;
+    border-radius: 8px;
+  }
+  
+  .page-btns,
+  .prev-btn,
+  .next-btn {
+    width: 50px;
+    margin-top: auto;
+    height: 50px;
+    background-color: aqua;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: 2px solid rgb(164, 163, 163);
+  }
+  .page-btns:hover,
+  .prev-btn:hover,
+  .next-btn:hover {
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+  }
+  .prev-btn,
+  .next-btn {
+    font-size: 0.3em;
+    background-image: url(./arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    margin-top: 0;
+  }
+  .next-btn {
+    background-image: url(./arrow-right.svg);
+  }
+  .active-btns {
+    background-color: rgba(255, 0, 0, 0.555);
+  }
+  .disable {
+    background-color: gray;
+  }
+  
+  .page-indicator {
+    color: aqua;
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 700;
+  } 
+  @media (min-width: 180px) and (max-width: 780px){
+
+    .para {
+      margin-left: 0;
+    }
+    .repolist-container-bottom {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      padding: 0;
+    }
+    .circle-wrap {
+      width: 100%;
+    }
+    .circle {
+      align-self: center;
+    }
+    .circle-wrap h2 {
+      width: 80%;
+    }
+  
+    .owner-info-wrap {
+      margin-left: 0;
+    }
+    .owner-info-wrap h3 {
+      width: 100%;
+    }
+    .owner-info-wrap p {
+      width: 100%;
+    }
+    .repo-visible,
+    .repo-branch {
+      width: 20vw;
+    }
+    .page-btns-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 300px;
+    }
+  } 

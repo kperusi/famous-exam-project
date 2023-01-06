@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("./Rubik/static/Rubik-Regular.ttf");
+  /* font-style: normal; */
+  font-stretch: 1% 500%; /* Required by Chrome */
+}
+@font-face {
+  font-family: "Sevillana";
+  src: url("./Sevillana-Regular.ttf");
+  font-stretch: 1% 500%;
+}
+
+.title {
+  width: 100%;
+ 
+  
+}
+.header {
+  display: flex;
+  font-family: "Rubik";
+  font-size: 2.7em;
+  padding-left: 10px;
+  height: 40px;
+  padding-right: 10px;
+}
+.subheader{
+    display: flex;
+    margin-top: -30px;
+     color: grey;
+     padding-left: 10px;
+     padding-right: 10px;
+     
+    
+}
