@@ -83,6 +83,15 @@
  border-style: solid;
  background-color: aliceblue;
 }
+.btn:hover{
+  cursor: pointer;
+}
+.backarrow{
+  transform: rotate(180deg);
+}
+.backarrow, .forwardarrow{
+  height: 30px;
+}
 
 @media (min-width: 180px) and (max-width: 780px){
   

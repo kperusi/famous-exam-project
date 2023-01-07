@@ -46,6 +46,9 @@ html {
     font-weight: 700;
     color: rgb(29, 134, 225);
   }
+  .home-btn:hover, .home-btn-profile:hover{
+    cursor: pointer;
+  }
   .home-btn-profile {
     width: 150px;
     height: 60px;
@@ -246,23 +249,24 @@ html {
   }
   
   .home-image-circle-two {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    width: 150px;
-    height: 150px;
+    /* position: relative; */
+    top: 60px;
+   left: 190px;
+    width: 120px;
+    height: 120px;
     background-color: #2785b5cb;
     border-radius: 50%;
-    display: none;
+    
   }
   .home-image-wrap {
     position: relative;
     top: 0px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid #0c8488cb;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #ffffffcb;
     border-radius: 50%;
     z-index: -1;
+    
 
   }
   .home-image {
@@ -277,7 +281,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 190px 300px;
-    border: 4px solid #0c8488cb;
+    border: 4px solid  #ffffffcb;
   }
   .home-title {
     font-size: 3rem;
@@ -314,6 +318,28 @@ html {
     
    
   }
+  .home-name{
+    display: flex;
+    position: absolute;
+   transform: rotate(0deg);
+   margin-top: 115px;
+   margin-left: 40px;
+   gap: 10px;
+   z-index: 2;
+
+  }
+  .famous{
+    font-size: 45px;
+    color: #05616171;
+    font-family: "sevillana";
+  
+  }
+  .sundays{
+    font-size: 45px;
+    color: #8e8e0bac;
+    font-family: "sevillana";
+  }
+ 
   .home-btn {
     width: 150px;
     height: 60px;

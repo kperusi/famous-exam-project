@@ -8,7 +8,7 @@ e.preventDefault()
   return (
     <main className={styles.main}>
       <div className={styles.email}>
-        <h1 style={{ color: "grey" }}>@ e-mail</h1>
+        <h1 style={{ color: "grey" }}>@ e-mail me</h1>
         <form className={styles.form} action="">
           <input type="text" className={styles.input} placeholder="Name" />
           <input type="text" className={styles.input} placeholder="Email" />
