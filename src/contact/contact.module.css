@@ -28,9 +28,10 @@
     border: 1.5px solid #1d3535 ;
     background-color: #476161;
     color: white;
-    font-size: 1.2em;
-    padding-left: 20px;
-}
+    font-size: 1.5em;
+    padding: 20px;
+  }
+   
 .btn{
   border-radius: 5px;
   outline: none;
@@ -51,42 +52,51 @@
   display: flex;
 }
 .facebookicon {
-    width: 5vw;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-image: url(./facebook.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px 30px;
+    background-size: 55px 55px;
     margin: auto 0;
+    border: 2px solid #5f6969 ;
+    border-radius: 5px;
+  
     
   }
   
   .twittericon {
-    width: 5vw;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-image: url(./twittericon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px 30px;
+    background-size: 55px 55px;
     margin: auto 0;
+    border: 2px solid #5f6969 ;
+    border-radius: 5px;
   }
   .linkedinicon {
-    width: 5vw;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-image: url(./linkedin.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px 30px;
+    background-size: 55px 55px;
     margin: auto 0;
+    border: 2px solid #5f6969 ;
+    border-radius: 5px;
   }
   .githubicon {
-    width: 5vw;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background-image: url(./github.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40px 30px;
+    background-size: 55px 55px;
     margin: auto 0;
+    border: 2px solid #5f6969 ;
+    border-radius: 5px;
   }
 
   @media (min-width: 180px) and (max-width: 780px){
@@ -139,7 +149,6 @@
 .facebookicon {
   width: 60px;
   height: 60px;
-  background-image: url(./facebookicon.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;
@@ -157,8 +166,8 @@
   border-radius: 50%;
 }
 .linkedinicon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60px 60px;

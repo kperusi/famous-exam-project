@@ -65,7 +65,7 @@ html {
   .home-avatar-background {
     position: absolute;
     background-color: g;
-    background-image: linear-gradient(rgb(51, 158, 158), rgb(188, 210, 210));
+    background-image: linear-gradient(#339e9e, rgb(188, 210, 210));
     width: 30%;
     height: 100%;
     z-index: -1;
@@ -119,7 +119,27 @@ html {
     justify-content: center;
     margin: 0 auto;
   }
+  .home-name{
+    display: flex;
+ 
+   transform: rotate(90deg);
+   margin-top: 0px;
+   margin-left: 390px;
   
+   gap: 10px;
+
+  }
+  .famous{
+    font-size: 60px;
+    color: #aeefef71;
+    font-family: "sevillana";
+  
+  }
+  .sundays{
+    font-size: 60px;
+    color: #8e8e0bac;
+    font-family: "sevillana";
+  }
  
   .section-two{
     display: flex;

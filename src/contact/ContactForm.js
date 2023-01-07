@@ -16,8 +16,9 @@ e.preventDefault()
             className={styles.textarea}
             name="message"
             id=""
-            cols="30"
+            cols="20"
             rows="10"
+            placeholder="Message"
           ></textarea>
           <button className={styles.btn} onClick={btnClick}>Send</button>
         </form>

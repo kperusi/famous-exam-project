@@ -59,7 +59,10 @@ export default function Home() {
         <header className="home-avatar">
           <div className="home-avatar-background"></div>
           <div className="home-image-wrap">
-            {/* <div className="home-image-circle-one"></div> */}
+            <div className="home-name">
+              <h1 className="famous">Famous</h1>
+              <h1 className="sundays">Sunday</h1>
+            </div>
             <div className="home-image"></div>
             <div className="home-image-circle-two"></div>
           </div>
