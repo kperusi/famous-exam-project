@@ -148,20 +148,18 @@ const [disabled, setDisabled]=useState('')
   if (states.error) {
     return (
       <div className="repolist-error">
-
-
-<Seo
-      title ='sunday famous github repository list'
-      description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
-       type= 'website'
-       name='Sunday Famous'/>
-
         <h1>{states.error}</h1>
         <button onClick={()=>{window.location.reload()}}>Reload</button>
       </div>
     );
   }
   return (
+    <>
+<Seo
+      title ='sunday famous github repository list'
+      description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
+       type= 'website'
+       name='Sunday Famous'/>
     <div className="repolist-container">
       <div className="list-item-wrap">
       <div className="repolist-container-bottom">
@@ -247,5 +245,6 @@ const [disabled, setDisabled]=useState('')
       
       <Outlet />
     </div>
+    </>
   );
 }

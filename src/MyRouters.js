@@ -20,7 +20,9 @@ export default function MyRouters() {
               <Route index element={<RepoList/>}/>
             </Route>
             <Route path='/errorboundary' element={<ErrorBoundaryPage/>}/>
+           <Route path='/error page' element={<ErrorPage/>}/>
             <Route path='*' element={<ErrorPage/>}/>
+            
         </Routes>
     </div>
   )

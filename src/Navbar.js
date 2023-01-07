@@ -42,6 +42,8 @@ export default function NavBar() {
             >
               Error Boundary
             </NavLink>
+            <NavLink className={'nav-links'} to='/error page'>Error Page</NavLink>
+            
           </div>
         </div>
       </nav>
