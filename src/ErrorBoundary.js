@@ -32,7 +32,7 @@ class ErrorBoundary extends React.Component {
             
             
           </details>
-          <button style={{width:'200px', height:'50px', margin:'100px auto'}} onClick={()=>{this.navigate}}> Back Home</button>
+          {/* <button style={{width:'200px', height:'50px', margin:'100px auto'}} onClick={()=>{window.location.reload()}}> Back Home</button> */}
           
         </div>
       );

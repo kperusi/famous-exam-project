@@ -9,7 +9,7 @@ export default function Projects() {
   let NumberOfPages = Math.ceil(ProjectList.length / projectPerPage);
   let lastIndex = currentPage*projectPerPage;
   let startIndex = lastIndex-projectPerPage
-  console.log(currentPage)
+
 
   let projects = ProjectList.slice(startIndex, lastIndex).map((eachProject, index) => (
     <div
@@ -28,7 +28,7 @@ export default function Projects() {
   ));
 
   return (
-    <div className={styles.top}>
+    <main className={styles.top}>
       <ul className={styles.list}>{projects}</ul>
       <div className={styles.btnWrap}>
          <button className={styles.btn} onClick={()=>{setCurrentPage(currentPage-1)}}  disabled={currentPage<=1}>
@@ -39,6 +39,6 @@ export default function Projects() {
           </button>
        
       </div>
-    </div>
+    </main>
   );
 }

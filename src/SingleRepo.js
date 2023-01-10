@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import logo from './timer.svg'
 import logo2 from './link.svg'
 import './singleRepoStyle.css'
+import Seo from "./Seo";
 
 
 
@@ -24,24 +25,28 @@ export default function SingleRepo() {
         return response.json();
       })
       .then((data) => {
-        // let [results ] = data;
-        // console.log(results.name )
         setData(data);
       })
-      .catch((error) => {
+      .catch(() => {
         SetError("Something went wrong");
       })
       .finally(() => {
         SetLoading(false);
       });
   }, []);
-
+console.log(data)
   const listName = data.map((each) => {
     if (each.name === params.name) {
       return (
+        
         <div className="single-repo-container" key={each.id}>
+           <Seo
+      title ={params.name}
+      description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
+       type= 'website'
+       name='Sunday Famous'/>
+       
           {each.id}
-          
           <div className="single-repo-owner">
           <h1>{each.owner.login}</h1>
           <h3>{each.owner.id}</h3>
@@ -111,8 +116,6 @@ export default function SingleRepo() {
     </div>
     );
   }
-
-
 
   return <div>{listName}</div>;
 }

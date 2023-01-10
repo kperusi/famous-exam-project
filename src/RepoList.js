@@ -52,9 +52,9 @@ const reducer = (state, action) => {
 
 
 export default function RepoList() {
-  document.title = "Sunday famous github repositories";
+  
   const navigate = useNavigate();
-const [disabled, setDisabled]=useState('')
+
   const [data, setData] = useState([]);
     const [states, dispatch] = useReducer(reducer, initial);
     const [currentPage, currentPageDispatch] = useReducer(pageReducer, userDetails
@@ -73,7 +73,7 @@ const [disabled, setDisabled]=useState('')
           setData(data);
         })
         .finally(() => {
-          // SetLoading(false);
+        
         });
     }, []);
   
@@ -86,22 +86,20 @@ const [disabled, setDisabled]=useState('')
           return response.json();
         })
         .then((data) => {
-          // let { results } = data;
-  
           dispatch({ type: "fetch-success", payload: data});
         })
-        .catch((error) => {
+        .catch(() => {
           dispatch({ type: "fetch-failed" });
         });
     }, []);
-    const getDetails = (eachPerson) => {
-      currentPageDispatch({
-        type: "setCurrentPage",
-        payload2: eachPerson.picture.large,
-        payload: currentPage.currentPage,
+    // const getDetails = (eachPerson) => {
+    //   currentPageDispatch({
+    //     type: "setCurrentPage",
+    //     payload2: eachPerson.picture.large,
+    //     payload: currentPage.currentPage,
      
-      });
-    };
+    //   });
+    // };
     
     let dataPerPage = 5;
     let NumberOfPages = Math.ceil(states.data.length / dataPerPage);
