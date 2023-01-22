@@ -92,14 +92,6 @@ export default function RepoList() {
           dispatch({ type: "fetch-failed" });
         });
     }, []);
-    // const getDetails = (eachPerson) => {
-    //   currentPageDispatch({
-    //     type: "setCurrentPage",
-    //     payload2: eachPerson.picture.large,
-    //     payload: currentPage.currentPage,
-     
-    //   });
-    // };
     
     let dataPerPage = 5;
     let NumberOfPages = Math.ceil(states.data.length / dataPerPage);

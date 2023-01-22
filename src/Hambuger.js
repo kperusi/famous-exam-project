@@ -4,9 +4,9 @@ import { useState } from "react";
 export default function Hambuger(props) {
   const style = {
     display: "block",
-    width: " 40px",
+    width: " 30px",
     height: " 4px",
-    margin: "8px",
+    margin: "4px",
     transition: " all 0.3s ease-in-out",
     backgroundColor: "grey",
   };

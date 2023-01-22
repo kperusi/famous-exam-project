@@ -290,9 +290,9 @@ html {
     width: 100%;
     /* text-align: justify; */
     margin-top: -20px;
-    font-size: 22px;
+    font-size: 20px;
     padding: 12px;
-    line-height: 1.4em;
+    line-height: 1.em;
     background-color: #6acbcb46;
     border-radius: 8px;
   }
