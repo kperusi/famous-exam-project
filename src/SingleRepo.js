@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import logo from './timer.svg'
 import logo2 from './link.svg'
 import './singleRepoStyle.css'
-import Seo from "./Seo";
+// import Seo from "./Seo";
 
 
 
@@ -40,11 +40,11 @@ console.log(data)
       return (
         
         <div className="single-repo-container" key={each.id}>
-           <Seo
+           {/* <Seo
       title ={params.name}
       description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
        type= 'website'
-       name='Sunday Famous'/>
+       name='Sunday Famous'/> */}
        
           {each.id}
           <div className="single-repo-owner">

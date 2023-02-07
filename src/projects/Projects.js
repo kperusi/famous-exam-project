@@ -24,6 +24,20 @@ export default function Projects() {
         src={eachProject.imgsrc}
         alt={eachProject.name}
       />
+        
+      <div className={styles.details}>
+       <p className={styles.projectdesc}>{eachProject.desc}</p>
+        <div className={styles.projectdescwrap}></div>
+        <div className={styles.btnwrap}>
+        <button className={styles.gitbtn} onClick={() => {
+                window.open(eachProject.github);
+              }}>github repository </button>
+        <button className={styles.livebtn} onClick={() => {
+                window.open(eachProject.live);
+              }}>live Url </button>
+
+        </div>
+      </div>
     </div>
   ));
 

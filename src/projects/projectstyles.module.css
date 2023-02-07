@@ -7,14 +7,16 @@
   gap: 10px;
   background-color: #3498db14;
   align-items: center;
-  height: 400px;
- /* color: #0c5c5c; */
+  height: 350px;
+  
+
 }
 .img {
   width: 200px;
-  height: 250px;
+  height: 200px;
   z-index: 0;
  border-radius: 15px;
+ /* border: solid; */
 }
 .top{
   margin: 0 auto;
@@ -92,7 +94,71 @@
 .backarrow, .forwardarrow{
   height: 30px;
 }
+.details{
+display: flex;
+flex-direction: column;
+  /* border: solid; */
+  width: 100%;
+  height: 150px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 0.9rem;
+  margin-top: -90px;
+  z-index: 1;
+  padding-left: 10px;
+  padding-top: 20px;
+  gap: 10px;
+   background: linear-gradient(rgba(238, 237, 237, 0.16) ,black);
+}
+.projectdesc{
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.gitbtn{
+  display: flex; 
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border-width: 0;
+  padding: 20px;
+  align-items: center;
+  width: 150px;
+  background-color: rgba(237, 39, 39, 0.912);
+  color: white;
+  font-size: 0.9rem;
+}
+.livebtn{
+  display: flex;
+  height: 20px;
+  border-radius: 8px;
+  outline: none;
+  padding: 20px;
+  align-items: center;
+  width: 90px;
+  border: 0px solid red;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+.btnwrap{
+  display: flex;
+  /* border: solid ; */
+  /* color:  #892be287; */
+  gap: 10px;
 
+}
+.livebtn:hover, .gitbtn:hover{
+  cursor: pointer;
+}
+.gobtn{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 0px;
+}
 @media (min-width: 180px) and (max-width: 780px){
   
   .main{

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import ErrorBoundary from './ErrorBoundary'
 import { BrowserRouter } from "react-router-dom";
 import Main from './Main'
-import { HelmetProvider } from 'react-helmet-async';
+// import HelmetProvider  from 'react-helmet';
 
 
 
@@ -12,7 +12,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-  <HelmetProvider>
+  {/* <HelmetProvider> */}
   <ErrorBoundary>
       <BrowserRouter>
       <Main/>
@@ -20,7 +20,7 @@ root.render(
      
       </BrowserRouter>
       </ErrorBoundary>
-  </HelmetProvider>
+  {/* </HelmetProvider> */}
 
   </StrictMode>
 );

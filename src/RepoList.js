@@ -3,7 +3,7 @@ import { useState ,useReducer} from "react";
 import { Outlet, useNavigate} from "react-router-dom";
 import { useEffect } from "react";
 import "./repolistStyle.css";
-import Seo from "./Seo";
+// import Seo from "./Seo";
 
 
 
@@ -145,11 +145,11 @@ export default function RepoList() {
   }
   return (
     <>
-<Seo
+{/* <Seo
       title ='sunday famous github repository list'
       description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
        type= 'website'
-       name='Sunday Famous'/>
+       name='Sunday Famous'/> */}
     <div className="repolist-container">
       <div className="list-item-wrap">
       <div className="repolist-container-bottom">

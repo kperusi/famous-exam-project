@@ -12,20 +12,21 @@ import githubicon from './skills/github.svg'
 import Projects from "./projects/Projects";
 import Title from "./titles/Title";
 import ContactForm from "./contact/ContactForm";
-import Seo from "./Seo";
-export default function Home() {
+// import Seo from "./Seo";
 
+
+export default function Home() {
 
 
   const navigate = useNavigate();
   return (
     <main className="home-top-container">
     
-      <Seo
+      {/* <Seo
       title ='sunday famous portfolio-Home page'
       description='Sunday Famous portfolio. I am a Software Engineer. Some of my web designs are shown here'
        type= 'website'
-       name='Sunday Famous'/>
+       name='Sunday Famous'/> */}
 
       <section className="section-one">
         <header className="home-bio-container">
@@ -76,7 +77,7 @@ export default function Home() {
         <Skills
           name="React Js"
           imgscr={reacticon}
-          imgName="vue"
+          imgName="reactjs"
           description="A Javascript Library for building Components"
         />
 
@@ -84,13 +85,13 @@ export default function Home() {
           name="Vue Js"
           imgscr={vue}
           imgName="vue"
-          description="A Javascript Library for building Components"
+          description="An approachable, performant and versatile framework for building web user interfaces"
         />
         <Skills
           name="SASS"
           imgscr={sassicon}
           imgName="vue"
-          description="A Javascript Library for building Components"
+          description="Sass is the most mature, stable, and powerful professional grade CSS extension language in the world"
         />
 
         <Skills
