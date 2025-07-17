@@ -3,7 +3,7 @@
     flex-direction:row;
     /* height: 200px; */
     gap: 60px;
- 
+ border: solid red;
 
 }
 .form{

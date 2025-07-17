@@ -3,9 +3,34 @@ import ipicon from "./IP Address Tracker.png";
 import multiform from './Multi-step form.png'
 import cardicon1 from './active-states1.jpg'
 import landpageicon from './Intro section with dropdown navigation.png'
+import i from './prette mobile app.JPG'
+import taskmaster from './taskmaster.png'
+
 export const ProjectList = [
+    {
+    name: "Prette Finance Mobile App",
+    imgsrc: i,
+    github: "https://github.com/kperusi/prettefinance",
+    live: "https://prettefinance.vercel.app/",
+    imgWidth: "",
+    imgHeight: "200",
+    backgroundColor: "#aabbcc",
+    desc:'A mobile financial app for keeping track of incomes and expenditure asnd also generate reports '
+  },
+
+      {
+    name: "Taskmaster",
+    imgsrc:taskmaster,
+    github: "https://github.com/kperusi/Taskmaster-capstone-project",
+    live: "https://capstoneproject-taskmaster.vercel.app/",
+    imgWidth: "100",
+    imgHeight: "500",
+    backgroundColor: "#aabbcc",
+    desc:'Organise your day to day todo list with easy '
+  },
+  
   {
-    name: "Calculator App",
+    name: "Calculator Application",
     imgsrc: calcicon,
     github: "https://github.com/kperusi/react-calculator",
     live: "https://react-calculator-three-eta.vercel.app/",
